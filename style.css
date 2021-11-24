@@ -1,0 +1,65 @@
+main{
+    width: 100%;
+}
+h1{
+    color: rgb(10, 95, 129);
+    text-align: center;
+}
+
+.indicator{
+    font-size: 5rem;
+    padding: 0;
+}
+
+#backward{
+    position: relative;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.473);
+}
+#forward{
+    position: relative;
+    right: 50px;
+    color: rgba(255, 255, 255, 0.473);
+}
+
+.indicator:hover{
+    background-color: rgba(102, 102, 102, 0.116);
+    cursor: pointer;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-parent{
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: scroll; */
+}
+
+.carousel-items{
+    display: flex;
+    /* min-width: min-content; */
+}
+
+.fade-in-img{
+    animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: .75;}
+    90%{opacity: .9;}
+    100%{opacity:1;}
+}
+
+.carousel-parent img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
